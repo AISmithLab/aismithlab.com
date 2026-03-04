@@ -17,6 +17,18 @@ export interface Publication {
 
 export const publications: Publication[] = [
     {
+    id: "oauthhub",
+    shorttitle: "oauthhub",
+    title: "OAuthHub: Mitigating OAuth Data Overaccess through a Local Data Hub",
+    authors: "qiyu li, haojian jin",
+    venue: "pets'26",
+    year: 2026,
+    image: "https://www.haojianj.in/resource/image/arkinator.jpg",
+    links: [{ label: "paper", url: "https://www.haojianj.in/publications.html" }],
+    category: "conference",
+    tags: ["privacy", "ai systems"],
+    },
+    {
     id: "lmgame-bench",
     shorttitle: "LMGame Bench",
     title: "lmgame-bench: a benchmark for evaluating large language models in game environments",
