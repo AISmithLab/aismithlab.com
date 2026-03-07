@@ -282,5 +282,6 @@ export const people: Person[] = [
     role: "undergraduate",
     period: "2022",
     category: "alumni",
+    destination: "tesla",
   },
 ];
