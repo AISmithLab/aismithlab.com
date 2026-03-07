@@ -18,6 +18,14 @@ export interface Person {
 export const people: Person[] = [
   // --- Current Members ---
   {
+    name: "haojian jin",
+    image: "https://www.haojianj.in/resource/image/portrait.jpg",
+    url: "https://www.haojianj.in/",
+    role: "principle investigator",
+    period: "2022 –",
+    category: "current",
+  },
+  {
     name: "qiyu li",
     image: "https://www.haojianj.in/lab/qiyuli.gif",
     url: "https://qyli00.github.io/",
