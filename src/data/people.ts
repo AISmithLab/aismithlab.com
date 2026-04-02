@@ -36,7 +36,7 @@ export const people: Person[] = [
   {
     name: "shao-yu chu",
     image: "https://www.haojianj.in/lab/shao-yu-chu.jpg",
-    url: "https://www.linkedin.com/in/shao-yu-chu/",
+    url: "https://shaoyuchu.github.io/",
     role: "phd student",
     period: "2024 –",
     category: "current",
