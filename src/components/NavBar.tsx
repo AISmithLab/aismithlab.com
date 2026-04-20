@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 const links = [
   { label: "home", to: "/" },
   { label: "people", to: "/people" },
-  { label: "projects", to: "/research" },
+  { label: "publications", to: "/research" },
 ];
 
 interface NavBarProps {
