@@ -17,6 +17,30 @@ export interface Publication {
 
 export const publications: Publication[] = [
     {
+    id: "socialtrust",
+    shorttitle: "SocialTrust.md",
+    title: "Designing SocialTrust.md to Enhance Developer Awareness of Risks in Utilizing Open-Source GitHub Repositories",
+    authors: "tony w li, yunpeng zhao, yujin zhang, r. stuart geiger, haojian jin",
+    venue: "cscw'26",
+    year: 2026,
+    image: "photos/socialtrustmd.png",
+    links: [{ label: "paper", url: "#" }],
+    category: "conference",
+    tags: ["security", "human", "trust"],
+    },
+    {
+    id: "decentralizedarena",
+    shorttitle: "Decentralized Arena",
+    title: "Decentralized Arena: Towards Democratic and Scalable Automatic Evaluation of Language Models",
+    authors: "yanbin yin, kun zhou, zhen wang, xiangdong zhang, yifei shao, shibo hao, yi gu, jieyuan liu, somanshu singla, tianyang liu, eric p. xing, zhengzhong liu, haojian jin, zhiting hu",
+    venue: "acl'26",
+    year: 2026,
+    image: "photos/decentralized.gif",
+    links: [{ label: "paper", url: "https://arxiv.org/pdf/2505.12808" }],
+    category: "conference",
+    tags: ["ai systems"], 
+    },
+    {
     id: "oauthhub",
     shorttitle: "oauthhub",
     title: "OAuthHub: Mitigating OAuth Data Overaccess through a Local Data Hub",
@@ -24,15 +48,15 @@ export const publications: Publication[] = [
     venue: "pets'26",
     year: 2026,
     image: "photos/oauthhub.jpg",
-    links: [{ label: "paper", url: "#" }],
+    links: [{ label: "paper", url: "https://arxiv.org/pdf/2603.10056" }],
     category: "conference",
     tags: ["privacy", "ai systems"],
     },
     {
     id: "lmgame-bench",
     shorttitle: "LMGame Bench",
-    title: "lmgame-bench: a benchmark for evaluating large language models in game environments",
-    authors: "Lanxiang Hu, Mingjia Huo, Yuxuan Zhang, Haoyang Yu, Eric P Xing, Ion Stoica, Tajana Rosing, Haojian Jin, Hao Zhang",
+    title: "LMGame-Bench: How Good Are LLMs at Playing Games?",
+    authors: "lanxiang hu, mingjia huo, yuxuan zhang, haoyang yu, eric p xing, ion stoica, tajana rosing, haojian jin, hao zhang",
     venue: "ICLR'26",
     year: 2026,
     image: "https://www.haojianj.in/resource/image/lmgamebench.jpg",
@@ -43,7 +67,7 @@ export const publications: Publication[] = [
   {
     id: "privacyakinator",
     shorttitle: "PrivacyAkinator",
-    title: "privacyakinator: articulating key privacy design decisions by answering llm-generated multiple-choice questions",
+    title: "PrivacyAkinator: Articulating Key Privacy Design Decisions by Answering LLM-Generated Multiple-choice Questions",
     authors: "qiyu li, yuen sum wong, yuen kei wong, longxuan yu, haojian jin",
     venue: "sigchi'26",
     year: 2026,
@@ -55,19 +79,20 @@ export const publications: Publication[] = [
   {
     id: "cobra",
     shorttitle: "CoBRA",
-    title: "cobra: programming cognitive bias in social agents using classic social science experiments",
+    title: "CoBRA: Programming Cognitive Bias in Social Agents Using Classic Social Science Experiments",
     authors: "xuan liu, haoyang shang, haojian jin",
     venue: "sigchi'26",
     year: 2026,
     image: "https://www.haojianj.in/resource/image/cobra.jpg",
     links: [{ label: "paper", url: "https://arxiv.org/abs/2509.13588" }],
     category: "conference",
+    award: "acm chi best paper award",
     tags: ["ai systems", "human", "trust"],
   },
   {
     id: "understandparents",
     shorttitle: "Prompt Rewriting for Parental Control",
-    title: "understanding parents' desires in moderating children's interactions with genai chatbots through llm-generated probes",
+    title: "Understanding Parents' Desires in Moderating Children's Interactions with GenAI Chatbots through LLM-Generated Probes",
     authors: "john driscoll, yulin chen, viki shi, izak vucharatavintara, yaxing yao, haojian jin",
     venue: "sigchi'26",
     year: 2026,
@@ -79,7 +104,7 @@ export const publications: Publication[] = [
   {
     id: "telemetryplay",
     shorttitle: "Telemetry for Gaming",
-    title: "predicting quality of video gaming experience using global-scale telemetry data and federated learning",
+    title: "Predicting Quality of Video Gaming Experience Using Global-Scale Telemetry Data and Federated Learning",
     authors: "zhongyang zhang, jinhe wen, zixi chen, dara arbab, sruti sahani, kent giard, bijan arbab, haojian jin, tauhidur rahman",
     venue: "chi play'25",
     year: 2025,
@@ -91,7 +116,7 @@ export const publications: Publication[] = [
   {
     id: "privacysketch",
     shorttitle: "Privacy Sketch",
-    title: "teaching data science students to sketch privacy designs through heuristics",
+    title: "Teaching Data Science Students to Sketch Privacy Designs through Heuristics",
     authors: "jinhe wen*, yingxi zhao*, wenqian xu*, yaxing yao, haojian jin",
     venue: "ieee s&p'25",
     year: 2025,
@@ -103,7 +128,7 @@ export const publications: Publication[] = [
   {
     id: "panopticon",
     shorttitle: "Panopticon",
-    title: "panopticon: the design and evaluation of a game that teaches data science students designing privacy",
+    title: "Panopticon: The Design and Evaluation of a Game that Teaches Data Science Students to Design Privacy",
     authors: "yuhe tian*, shao-yu chu*, yuxuan liu*, haojian jin",
     venue: "popets'25",
     year: 2025,
@@ -115,7 +140,7 @@ export const publications: Publication[] = [
   {
     id: "gamearena",
     shorttitle: "GameArena",
-    title: "gamearena: evaluating llm reasoning through live computer games",
+    title: "GameArena: Evaluating LLM Reasoning through Live Computer Games",
     authors: "lanxiang hu*, qiyu li*, anze xie*, nan jiang, ion stoica, haojian jin, hao zhang",
     venue: "iclr'25",
     year: 2025,
@@ -127,7 +152,7 @@ export const publications: Publication[] = [
   {
     id: "gptwall",
     shorttitle: "GPTWall",
-    title: "gptwall: governing open vocabulary data leaks using an edge llm through programming by example",
+    title: "GPTWall: Governing Open Vocabulary Data Leaks Using an Edge LLM through Programming by Example",
     authors: "qiyu li, jinhe wen, haojian jin",
     venue: "imwut'24",
     year: 2024,
@@ -139,7 +164,7 @@ export const publications: Publication[] = [
   {
     id: "moderator",
     shorttitle: "Moderator",
-    title: "moderator: moderating text-to-image diffusion models through fine-grained context-based policies",
+    title: "Moderator: Moderating Text-to-Image Diffusion Models through Fine-Grained Context-Based Policies",
     authors: "peiran wang*, qiyu li*, longxuan yu, ziyao wang, ang li, haojian jin",
     venue: "ccs'24",
     year: 2024,
@@ -155,7 +180,7 @@ export const publications: Publication[] = [
   {
     id: "lootbox",
     shorttitle: "Folk Models of Loot Boxes",
-    title: "folk models of loot boxes in video games",
+    title: "Folk Models of Loot Boxes in Video Games",
     authors: "jinhe wen, zhongyang zhang, tuan m. tran, lianrui mu, tauhidur rahman, haojian jin",
     venue: "chi play'24",
     year: 2024,
@@ -166,8 +191,8 @@ export const publications: Publication[] = [
   },
   {
     id: "treequestion",
-    shorttitle: "Treequestion",
-    title: "treequestion: assessing conceptual learning outcomes with llm-generated multiple-choice questions",
+    shorttitle: "TreeQuestion",
+    title: "TreeQuestion: Assessing Conceptual Learning Outcomes with LLM-Generated Multiple-Choice Questions",
     authors: "zirui cheng, jingfei xu, haojian jin",
     venue: "cscw'24",
     year: 2024,
@@ -179,7 +204,7 @@ export const publications: Publication[] = [
   {
     id: "zoomattention",
     shorttitle: "ZoomAttention",
-    title: "redesigning privacy with user feedback: the case of zoom attendee attention tracking",
+    title: "Redesigning Privacy with User Feedback: The Case of Zoom Attendee Attention Tracking",
     authors: "tony w li, arshia arya, haojian jin",
     venue: "chi'24",
     year: 2024,
@@ -195,7 +220,7 @@ export const publications: Publication[] = [
   {
     id: "contextuallabel",
     shorttitle: "ContextualLabel",
-    title: "predicting users' privacy concerns using contextual labels and personal preferences",
+    title: "Predicting Users' Privacy Concerns Using Contextual Labels and Personal Preferences",
     authors: "yaqing yang, tony w li, haojian jin",
     venue: "chi'24",
     year: 2024,
@@ -211,7 +236,7 @@ export const publications: Publication[] = [
   {
     id: "peekaboo",
     shorttitle: "Peekaboo",
-    title: "peekaboo: a hub-based approach to enable transparency in data processing within smart homes",
+    title: "Peekaboo: A Hub-Based Approach to Enable Transparency in Data Processing within Smart Homes",
     authors: "haojian jin, gram liu, david hwang, swarun kumar, yuvraj agarwal, jason i. hong",
     venue: "ieee s&p'22",
     year: 2022,
@@ -226,7 +251,7 @@ export const publications: Publication[] = [
   {
     id: "privacyspeeddating",
     shorttitle: "Privacy Speeddating",
-    title: "exploring the needs of users for supporting privacy-protective behavior in smart homes",
+    title: "Exploring the Needs of Users for Supporting Privacy-Protective Behavior in Smart Homes",
     authors: "haojian jin, boyuan guo, rituparna roychoudhury, yaxing yao, swarun kumar, yuvraj agarwal, jason hong",
     venue: "chi'22",
     year: 2022,
@@ -241,7 +266,7 @@ export const publications: Publication[] = [
   {
     id: "leanprivacyreview",
     shorttitle: "Lean Privacy Review",
-    title: "lean privacy review: collecting users' privacy concerns of data practices at a low cost",
+    title: "Lean Privacy Review: Collecting Users' Privacy Concerns of Data Practices at a Low Cost",
     authors: "haojian jin, hong shen, mayank jain, swarun kumar, jason hong",
     venue: "tochi'21",
     year: 2021,
@@ -256,7 +281,7 @@ export const publications: Publication[] = [
   {
     id: "softwaredefinedcooking",
     shorttitle: "Software Defined Cooking",
-    title: "software defined cooking using a microwave oven",
+    title: "Software Defined Cooking using a Microwave Oven",
     authors: "haojian jin, jingxian wang, swarun kumar, jason hong",
     venue: "mobicom'19",
     year: 2019,
@@ -272,7 +297,7 @@ export const publications: Publication[] = [
   {
     id: "mobipurpose",
     shorttitle: "Mobipurpose",
-    title: "mobipurpose: inferring the purposes of network traffic in mobile apps",
+    title: "Mobipurpose: Inferring the Purposes of Network Traffic in Mobile Apps",
     authors: "haojian jin, minyi liu, kevan dohia, yuanchun li, gaurav kumar srivastava, matthew fredrikson, yuvraj agarwal, jason hong",
     venue: "imwut'18",
     year: 2018,
@@ -287,7 +312,7 @@ export const publications: Publication[] = [
   {
     id: "wish",
     shorttitle: "Wish",
-    title: "wish: towards a wireless shape-aware world using passive rfids",
+    title: "Wish: Towards a Wireless Shape-Aware World using Passive RFIDs",
     authors: "haojian jin*, jingxian wang*, zhijian yang, swarun kumar, jason hong",
     venue: "mobisys'18",
     year: 2018,
@@ -303,7 +328,7 @@ export const publications: Publication[] = [
   {
     id: "rfwear",
     shorttitle: "RFWear",
-    title: "rfwear: towards wearable everyday body-frame tracking using passive rfids",
+    title: "RFWear: Towards Wearable Everyday Body-Frame Tracking using Passive RFIDs",
     authors: "haojian jin, zhijian yang, swarun kumar, jason hong",
     venue: "imwut'17 / ubicomp'18",
     year: 2017,
@@ -320,9 +345,9 @@ export const publications: Publication[] = [
   {
     id: "elasticplay",
     shorttitle: "ElasticPlay",
-    title: "elasticplay: interactive video summarization with dynamic time budgets",
+    title: "ElasticPlay: Interactive Video Summarization with Dynamic Time Budgets",
     authors: "haojian jin, yale song, koji yatani",
-    venue: "acmmm'17",
+    venue: "ACMMM'17",
     year: 2017,
     video: "https://www.haojianj.in/resource/videos/elasticplay_thumb.mp4",
     links: [
@@ -337,9 +362,9 @@ export const publications: Publication[] = [
   {
     id: "corona",
     shorttitle: "Corona",
-    title: "corona: positioning adjacent device with asymmetric bluetooth low energy rssi distributions",
+    title: "Corona: Positioning Adjacent Device with Asymmetric Bluetooth Low Energy RSSI Distributions",
     authors: "haojian jin, cheng xu, kent lyons",
-    venue: "uist'15",
+    venue: "UIST'15",
     year: 2015,
     video: "https://www.haojianj.in/resource/videos/corona_arrow_white.mp4",
     links: [
@@ -352,9 +377,9 @@ export const publications: Publication[] = [
   {
     id: "tracko",
     shorttitle: "Tracko",
-    title: "tracko: ad-hoc mobile 3d tracking using ble and inaudible signals for cross-device interaction",
+    title: "Tracko: Ad-Hoc Mobile 3D Tracking using BLE and Inaudible Signals for Cross-Device Interaction",
     authors: "haojian jin, christian holz, kasper hornbæk",
-    venue: "uist'15",
+    venue: "UIST'15",
     year: 2015,
     video: "https://www.haojianj.in/resource/videos/tracko_pouring.mp4",
     links: [
@@ -368,9 +393,9 @@ export const publications: Publication[] = [
   {
     id: "reviewcollage",
     shorttitle: "ReviewCollage",
-    title: "reviewcollage: a mobile interface for direct comparison using online reviews",
+    title: "ReviewCollage: A Mobile Interface for Direct Comparison using Online Reviews",
     authors: "haojian jin, tetsuya sakai, koji yatani",
-    venue: "mobilehci'14",
+    venue: "MobileHCI'14",
     year: 2014,
     video: "https://www.haojianj.in/resource/videos/reviewcollage.mp4",
     links: [
@@ -378,14 +403,14 @@ export const publications: Publication[] = [
       { label: "slides", url: "https://www.haojianj.in/resource/pdf/reviewcollage_presentation.pdf" },
       { label: "video", url: "http://youtu.be/QDPg2E0RYbg" },
     ],
-    award: "best paper honorable mention award, top 5%",
+    award: "Best Paper Honorable Mention Award, Top 5%",
     category: "conference",
     tags: ["human"],
   },
   {
     id: "confusionmatrix",
     shorttitle: "Alternative Confusion Matrix",
-    title: "designing alternative representations of confusion matrices to support non-expert public understanding of algorithmic outputs and performance",
+    title: "Designing Alternative Representations of Confusion Matrices to Support Non-Expert Public Understanding of Algorithmic Outputs and Performance",
     authors: "hong shen, haojian jin, ángel alexander cabrera, adam perer, nina balcan, jason hong",
     venue: "cscw'20",
     year: 2020,
@@ -397,7 +422,7 @@ export const publications: Publication[] = [
   {
     id: "alipaydiffusion",
     shorttitle: "Alipay Adoption",
-    title: "'i can't even buy apples if i don't use mobile pay?' when mobile payments become infrastructural in china",
+    title: "'I Can't Even Buy Apples if I Don't Use Mobile Pay?' When Mobile Payments Become Infrastructural in China",
     authors: "hong shen, cori faklaris, haojian jin, laura dabbish, jason hong",
     venue: "cscw'20",
     year: 2020,
@@ -409,7 +434,7 @@ export const publications: Publication[] = [
   {
     id: "rfidtattoo",
     shorttitle: "RFID Tattoo",
-    title: "rfid tattoo: a wireless platform for speech recognition",
+    title: "RFID Tattoo: A Wireless Platform for Speech Recognition",
     authors: "jingxian wang, chengfeng pan, haojian jin, vaibhav singh, jason hong, carmel majidi, swarun kumar",
     venue: "imwut'19 / ubicomp'20",
     year: 2019,
@@ -422,7 +447,7 @@ export const publications: Publication[] = [
   {
     id: "sozu",
     shorttitle: "Sozu",
-    title: "sozu: self-powered radio tags for building-scale activity sensing",
+    title: "Sozu: Self-Powered Radio Tags for Building-Scale Activity Sensing",
     authors: "yang zhang, yasha iravantchi, haojian jin, swarun kumar, chris harrison",
     venue: "uist'19",
     year: 2019,
@@ -434,7 +459,7 @@ export const publications: Publication[] = [
   {
     id: "pushid",
     shorttitle: "PushID",
-    title: "pushing the range limits of commercial passive rfids",
+    title: "Pushing the Range Limits of Commercial Passive RFIDs",
     authors: "jingxian wang, junbo zhang, rajarshi saha, haojian jin, swarun kumar",
     venue: "nsdi'19",
     year: 2019,
@@ -446,7 +471,7 @@ export const publications: Publication[] = [
   {
     id: "weatherphotos",
     shorttitle: "Weather Photos",
-    title: "finding weather photos: community-supervised methods for editorial curation of online sources",
+    title: "Finding Weather Photos: Community-Supervised Methods for Editorial Curation of Online Sources",
     authors: "david a. shamma, lyndon kennedy, jia li, bart thomee, haojian jin, jeff yuan",
     venue: "cscw'16",
     year: 2016,
@@ -458,7 +483,7 @@ export const publications: Publication[] = [
   {
     id: "cohortspeechify",
     shorttitle: "Cohort & Speechify",
-    title: "the cohort and speechify libraries for rapid construction of speech enabled applications",
+    title: "The Cohort and Speechify Libraries for Rapid Construction of Speech Enabled Applications",
     authors: "tejaswi kasturi, haojian jin, aasish pappu, sungjin lee, beverly harrison, ramana murthy, amanda stent",
     venue: "sigdial'15",
     year: 2015,
@@ -470,7 +495,7 @@ export const publications: Publication[] = [
   {
     id: "miningtouch",
     shorttitle: "Mining Touch Interaction",
-    title: "mining touch interaction data in mobile search",
+    title: "Mining Touch Interaction Data in Mobile Search",
     authors: "qi guo, haojian jin, dmitry lagun, shuai yuan, eugene agichtein",
     venue: "sigir'13",
     year: 2013,

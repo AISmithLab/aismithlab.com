@@ -100,7 +100,12 @@ const Research = () => {
                       {pub.authors}
                     </p>
                     <p className="mt-1.5 text-xs uppercase tracking-wide text-foreground/70">
-                      {pub.venue} {pub.award ? "🏅" : ""}
+                      {pub.venue}
+                      {pub.award && (
+                        <span className="ml-2 italic underline underline-offset-2">
+                          {pub.award}
+                        </span>
+                      )}
                     </p>
 
                     {pub.links.length > 0 && (

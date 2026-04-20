@@ -52,7 +52,7 @@ const Index = () => {
             <ul className="mt-3 space-y-1.5">
               {[
                 { name: "AICodingGym", url: "https://aicodinggym.com/" },
-                { name: "cobra 🏆", url: "https://cobra.clawder.ai" },
+                { name: "CoBRA 🏆", url: "https://cobra.clawder.ai" },
                 { name: "PersonalDataHub", url: "https://github.com/AISmithLab/PersonalDataHub" },
                 { name: "PrivacyJury", url: "http://jury.privacydev.org/" },
               ].map((tool) => (
