@@ -67,7 +67,7 @@ export const people: Person[] = [
   },  
   {
     name: "yiwen tu",
-    image: "photos/portraits/dora-smith.png",
+    image: "/photos/portraits/dora-smith.png",
     url: "https://scholar.google.com/citations?user=V2H1oSQAAAAJ&hl=en",
     role: "graduate student",
     period: "2025",
@@ -108,7 +108,7 @@ export const people: Person[] = [
   },
   {
     name: "rayirth dinesh",
-    image: "photos/portraits/rayithdinesh.jpeg",
+    image: "/photos/portraits/rayithdinesh.jpeg",
     url: "https://www.linkedin.com/in/rayirth-dinesh-b61817308/",
     role: "undergraduate",
     period: "2025",
@@ -117,7 +117,7 @@ export const people: Person[] = [
   },
   {
     name: "govind sriram",
-    image: "photos/portraits/govindsriram.jpeg",
+    image: "/photos/portraits/govindsriram.jpeg",
     url: "https://www.linkedin.com/in/govind-sriram/",
     role: "undergraduate",
     period: "2025",
@@ -144,7 +144,7 @@ export const people: Person[] = [
   },
   {
     name: "xiaoyue yan",
-    image: "photos/portraits/xiaoyueyan.jpeg",
+    image: "/photos/portraits/xiaoyueyan.jpeg",
     url: "https://scholar.google.com/citations?user=_mfCnY8AAAAJ&hl=en&oi=ao",
     role: "ms student",
     period: "2024",
@@ -259,7 +259,7 @@ export const people: Person[] = [
   },
   {
     name: "wenyuan jiang",
-    image: "photos/portraits/dora-smith.png",
+    image: "/photos/portraits/dora-smith.png",
     url: "https://github.com/jwyjohn",
     role: "undergraduate",
     period: "2023",
