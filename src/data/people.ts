@@ -64,6 +64,15 @@ export const people: Person[] = [
     role: "graduate student",
     period: "2025 –",
     category: "current",
+  },  
+  {
+    name: "yiwen tu",
+    image: "people/dora-smith.png",
+    url: "https://scholar.google.com/citations?user=V2H1oSQAAAAJ&hl=en",
+    role: "graduate student",
+    period: "2025",
+    category: "current",
+    // destination: "uiuc phd",
   },
   {
     name: "lucas chen",
@@ -96,15 +105,6 @@ export const people: Person[] = [
     role: "undergraduate",
     period: "2025 –",
     category: "current",
-  },
-  {
-    name: "yiwen tu",
-    image: "people/dora-smith.png",
-    url: "https://scholar.google.com/citations?user=V2H1oSQAAAAJ&hl=en",
-    role: "graduate student",
-    period: "2025",
-    category: "current",
-    // destination: "uiuc phd",
   },
   {
     name: "rayirth dinesh",
