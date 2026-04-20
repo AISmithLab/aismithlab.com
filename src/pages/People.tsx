@@ -12,12 +12,28 @@ function getAlumniYear(period: string): number {
   return parseInt(matches[matches.length - 1], 10);
 }
 
+// Rank by destination: phd first, then ms, then industry/other, then no destination.
+function destinationRank(dest?: string): number {
+  if (!dest) return 3;
+  const d = dest.toLowerCase();
+  if (d.includes("phd")) return 0;
+  if (d.includes("ms")) return 1;
+  return 2; // industry / other
+}
+
 const alumniByYear = alumni.reduce<Record<number, typeof alumni>>((acc, person) => {
   const year = getAlumniYear(person.period);
   if (!acc[year]) acc[year] = [];
   acc[year].push(person);
   return acc;
 }, {});
+
+// Sort each year's group by destination rank.
+Object.keys(alumniByYear).forEach((y) => {
+  alumniByYear[parseInt(y, 10)].sort(
+    (a, b) => destinationRank(a.destination) - destinationRank(b.destination)
+  );
+});
 
 const alumniYears = Object.keys(alumniByYear)
   .map((y) => parseInt(y, 10))
