@@ -4,6 +4,25 @@ import NavBar from "@/components/NavBar";
 const currentMembers = people.filter((p) => p.category === "current");
 const alumni = people.filter((p) => p.category === "alumni");
 
+// Extract a sortable year from a person's period string.
+// Uses the last 4-digit year found (e.g., "2023 – 2024" -> 2024, "2024" -> 2024).
+function getAlumniYear(period: string): number {
+  const matches = period.match(/\d{4}/g);
+  if (!matches || matches.length === 0) return 0;
+  return parseInt(matches[matches.length - 1], 10);
+}
+
+const alumniByYear = alumni.reduce<Record<number, typeof alumni>>((acc, person) => {
+  const year = getAlumniYear(person.period);
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(person);
+  return acc;
+}, {});
+
+const alumniYears = Object.keys(alumniByYear)
+  .map((y) => parseInt(y, 10))
+  .sort((a, b) => b - a);
+
 const People = () => {
   return (
     <div className="light-research min-h-screen bg-background text-foreground">
@@ -27,14 +46,23 @@ const People = () => {
           </div>
         </section>
 
-        {/* alumni */}
+        {/* alumni grouped by year */}
         <section className="pb-16">
           <h2 className="mb-10 text-sm font-medium tracking-widest text-muted-foreground">
             alumni
           </h2>
-          <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {alumni.map((person) => (
-              <PersonCard key={person.name} person={person} />
+          <div className="space-y-12">
+            {alumniYears.map((year) => (
+              <div key={year}>
+                <h3 className="mb-6 text-xs font-medium tracking-widest text-muted-foreground/70">
+                  {year}
+                </h3>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                  {alumniByYear[year].map((person) => (
+                    <PersonCard key={person.name} person={person} />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </section>
