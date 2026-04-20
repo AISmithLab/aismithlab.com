@@ -97,8 +97,35 @@ export const people: Person[] = [
     period: "2025 –",
     category: "current",
   },
-
+  {
+    name: "yiwen tu",
+    image: "people/dora-smith.png",
+    url: "https://scholar.google.com/citations?user=V2H1oSQAAAAJ&hl=en",
+    role: "graduate student",
+    period: "2025",
+    category: "current",
+    // destination: "uiuc phd",
+  },
+  {
+    name: "rayirth dinesh",
+    image: "people/rayithdinesh.jpeg",
+    url: "https://www.linkedin.com/in/rayirth-dinesh-b61817308/",
+    role: "undergraduate",
+    period: "2025",
+    category: "current",
+    // destination: "uiuc phd",
+  },
+  {
+    name: "govind sriram",
+    image: "people/govindsriram.jpeg",
+    url: "https://www.linkedin.com/in/govind-sriram/",
+    role: "undergraduate",
+    period: "2025",
+    category: "current",
+    // destination: "uiuc phd",
+  },
   // --- Alumni ---
+
   {
     name: "max wong",
     image: "https://www.haojianj.in/lab/maxwong.jpeg",
@@ -114,6 +141,15 @@ export const people: Person[] = [
     role: "undergraduate",
     period: "2024 – 2025",
     category: "alumni",
+  },
+  {
+    name: "xiaoyue yan",
+    image: "people/xiaoyueyan.jpeg",
+    url: "https://scholar.google.com/citations?user=_mfCnY8AAAAJ&hl=en&oi=ao",
+    role: "ms student",
+    period: "2024",
+    category: "alumni",
+    destination: "mit ms",
   },
   {
     name: "jinhe wen",
@@ -222,6 +258,15 @@ export const people: Person[] = [
     destination: "cmu ms",
   },
   {
+    name: "wenyuan jiang",
+    image: "people/dora-smith.png",
+    url: "https://github.com/jwyjohn",
+    role: "undergraduate",
+    period: "2023",
+    category: "alumni",
+    destination: "ETH Zurich ms",
+  },
+  {
     name: "yuwei xiao",
     image: "https://www.haojianj.in/lab/yuweixiao.jpeg",
     url: "https://xavier-shaw.github.io/",
@@ -239,15 +284,15 @@ export const people: Person[] = [
     category: "alumni",
     destination: "cmu phd",
   },
-  // {
-  //   name: "zirui cheng",
-  //   image: "https://www.haojianj.in/lab/ziruicheng.png",
-  //   url: "https://chengzr01.github.io/",
-  //   role: "undergraduate",
-  //   period: "2023",
-  //   category: "alumni",
-  //   destination: "uiuc ms",
-  // },
+  {
+    name: "zirui cheng",
+    image: "https://www.haojianj.in/lab/ziruicheng.png",
+    url: "https://chengzr01.github.io/",
+    role: "undergraduate",
+    period: "2023",
+    category: "alumni",
+    destination: "uiuc ms",
+  },
   {
     name: "jingfei xu",
     image: "https://www.haojianj.in/lab/jingfeixu.jpeg",
